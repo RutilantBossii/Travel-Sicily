@@ -1,0 +1,13 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#content-cards{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-bottom: 20px;
+}

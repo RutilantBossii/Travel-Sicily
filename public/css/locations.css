@@ -1,0 +1,47 @@
+.places{
+    padding: 20px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-card{
+    margin: 20px 0;
+    display:flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    width: 80vw;
+    border-radius: 10px;
+}
+
+.location-image{
+    background-image: url('../images/places/tempio_segesta.png');
+    border-radius: 10px;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.location-info{
+    margin-left: 20px;
+}
+
+#choice{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 1px;
+}
+
+#choice button{
+    background-color: var(--main-color);
+    border: solid 3px var(--secondary-color);
+    cursor: pointer;
+}
+
+#choice button:hover{
+    background-color: green;
+    border: solid 1px var(--secondary-color);
+    cursor: pointer;
+}

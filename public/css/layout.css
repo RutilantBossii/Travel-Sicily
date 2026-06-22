@@ -1,0 +1,236 @@
+:root {
+    --main-color: lightgreen;
+    --secondary-color: beige;
+    --text-color: black;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#desktop-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 50px;
+    padding: 0px 40px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 500px;
+    z-index: 900;
+}
+
+#phone-nav{
+    display: none;
+}
+
+#phone-nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    gap: 25px;
+    
+    z-index: 999; 
+}
+
+#phone-nav-list a {
+    font-size: 3rem;
+    color: var(--text-color); 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#phone-nav-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    height: 10vh;
+    width: 20vw;
+}
+
+.hidden{
+    display: none !important; 
+}
+
+
+
+@media (max-width: 500px) {
+    #phone-nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #desktop-nav{
+        display: none;
+    }
+
+    .section-2 {
+        max-width: 0;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 200px;
+    width: 80vw;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: solid 3px var(--main-color);
+}
+
+.user-img{
+    background-size: cover;
+    height: 80%;
+    aspect-ratio: 1;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+
+.first-half{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-half{
+    flex-grow: 1;
+    margin: 40px 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-half a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    border: solid 3px var(--main-color);
+    font-size: 0.8em;
+}
+
+.error-msg{
+    color: red; 
+    font-size: 0.8rem; 
+    display: block; 
+}
+
+.interaction-posts button{
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: solid 1px var(--secondary-color);
+}
+
+.rmv-btn:hover{
+    background-color: red;
+    cursor: pointer;
+    border: solid 1px var(--main-color);
+}
+
+.interaction-posts{
+    margin-top: 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.likes p{
+    margin: 0;
+    padding: 0 10px;
+}
+
+.likes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fancy-btn{
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: solid 1px var(--secondary-color);
+    width: fit-content;
+    padding: 2px 5px;
+}
+
+.fancy-btn:hover{
+    background-color: green;
+    cursor: pointer;
+    border: solid 1px var(--secondary-color);
+}
+
+button:hover{
+    background-color: green;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.second-half a:hover{
+    background-color: var(--main-color);
+}
+
+
